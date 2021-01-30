@@ -12,6 +12,7 @@ namespace TestEnvoieMail.Pages
     {
         private readonly ILogger<IndexModel> _logger;
 
+        public Program prog = new Program();
         public IndexModel(ILogger<IndexModel> logger)
         {
             _logger = logger;
@@ -19,7 +20,7 @@ namespace TestEnvoieMail.Pages
 
         public void OnGet()
         {
-
+            prog.test4();
         }
     }
 }
